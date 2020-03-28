@@ -18,5 +18,5 @@ fi
 TOP_DIR=$(realpath $THIS_SCRIPT_DIR)
 TEMPLATECONF=$TOP_DIR/sources/meta-sample/conf
 
-. $TOP_DIR/sources/poky/oe-init-build-env $1
-. $TOP_DIR/sources/bitbake-bash-completion/bitbake
+. $TOP_DIR/../../poky/oe-init-build-env $1
+. $TOP_DIR/../../bitbake-bash-completion/bitbake
