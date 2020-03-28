@@ -1,0 +1,12 @@
+
+### Shell environment set up for Yocto builds. ###
+
+Supported machines:
+    qemuarm
+
+Common targets are:
+    core-image-minimal
+
+You can run bitbake as follows to build a specific image:
+    MACHINE=qemuarm bitbake core-image-minimal
+
