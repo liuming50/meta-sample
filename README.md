@@ -56,7 +56,22 @@ Set up the environment:
 ```
 $ cd ~/sample-workspace
 $ ./setup
-$ bitbake core-image-nimal 
+$ bitbake core-image-nimal
 ```
+
+
+# Run testimage inside docker
+
+```
+$ bitbake core-image-nimal -c testimage
+```
+
+
+# Start a qemu console inside docker
+
+```
+$ runqemu core-image-nimal
+```
+
 
 Layer Maintainer: [Ming Liu](<mailto:liu.ming50@gmail.com>)
