@@ -56,21 +56,21 @@ Set up the environment:
 ```
 $ cd ~/sample-workspace
 $ ./setup
-$ bitbake core-image-nimal
+$ bitbake core-image-minimal
 ```
 
 
 # Run testimage inside docker
 
 ```
-$ bitbake core-image-nimal -c testimage
+$ bitbake core-image-minimal -c testimage
 ```
 
 
 # Start a qemu console inside docker
 
 ```
-$ runqemu core-image-nimal
+$ runqemu core-image-minimal
 ```
 
 
