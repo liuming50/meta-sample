@@ -16,7 +16,7 @@ else
 fi
 
 SCRIPT_DIR=$(realpath $THIS_SCRIPT_DIR)
-TEMPLATECONF=$SCRIPT_DIR/../../meta-sample/conf
+TEMPLATECONF=$SCRIPT_DIR/../conf
 
 . $SCRIPT_DIR/../../poky/oe-init-build-env $1
 . $SCRIPT_DIR/../../bitbake-bash-completion/bitbake

@@ -231,6 +231,9 @@ PACKAGECONFIG_append_pn-nativesdk-qemu = " sdl"
 # this doesn't mean anything to you.
 CONF_VERSION = "1"
 
+INHERIT += "testimage"
+TEST_SUITES = "ping ssh"
+
 # Use screen as the default terminal
 OE_TERMINAL = "screen"
 
