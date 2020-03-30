@@ -234,6 +234,8 @@ CONF_VERSION = "1"
 INHERIT += "testimage"
 TEST_SUITES = "ping ssh"
 
+QB_OPT_APPEND_append = " -nographic"
+
 # Use screen as the default terminal
 OE_TERMINAL = "screen"
 
