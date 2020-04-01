@@ -49,13 +49,24 @@ $ repo sync
 ```
 
 
-# Build the source
+# Build the source inside docker
 
 Set up the environment:
 
 ```
 $ cd ~/sample-workspace
 $ ./setup
+$ bitbake core-image-minimal
+```
+
+
+# Build the source natively (Verified on Ubuntu 16.04/18.04)
+
+Set up the environment:
+
+```
+$ cd ~/sample-workspace
+$ . poky-init-build-env
 $ bitbake core-image-minimal
 ```
 
@@ -67,7 +78,7 @@ $ bitbake core-image-minimal -c testimage
 ```
 
 
-# Start a qemu console inside docker
+# Start a qemu console
 
 ```
 $ runqemu core-image-minimal
