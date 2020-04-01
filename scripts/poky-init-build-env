@@ -15,8 +15,8 @@ else
    THIS_SCRIPT_DIR="$(pwd)"
 fi
 
-SCRIPT_DIR=$(realpath $THIS_SCRIPT_DIR)
-TEMPLATECONF=$SCRIPT_DIR/../conf
+TOP_DIR=$(realpath $THIS_SCRIPT_DIR)
+TEMPLATECONF=$TOP_DIR/sources/meta-sample/conf
 
-. $SCRIPT_DIR/../../poky/oe-init-build-env $1
-. $SCRIPT_DIR/../../bitbake-bash-completion/bitbake
+. $TOP_DIR/sources/poky/oe-init-build-env $1
+. $TOP_DIR/sources/bitbake-bash-completion/bitbake
